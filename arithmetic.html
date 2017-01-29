@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排序算法动画</title>
+    <style>
+        #container{
+            position: relative;
+            width: 1000px;
+            height: 400px;
+        }
+        .rect{
+            width: 25px;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            transition: left 500ms;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<select id="select">
+    <option value="冒泡排序" selected>冒泡排序</option>
+    <option value="选择排序">选择排序</option>
+    <option value="插入排序" >插入排序</option>
+    <option value="快速排序">快速排序</option>
+</select>
+<button id="startSortBtn" disabled>开始排序</button>
+<button id="randomBtn">生成随机数组</button>
+<div id="container">
+
+</div>
+<script src="js/main.js"></script>
+<script src="js/arithmetic.js"></script>
+<script src="js/animate.js"></script>
+</body>
+</html>
