@@ -17,18 +17,25 @@
             transition: left 500ms;
             text-align: center;
         }
+        #hint{
+            position: absolute;
+            width: 500px;
+        }
     </style>
 </head>
 <body>
 
 <select id="select">
-    <option value="冒泡排序" selected>冒泡排序</option>
-    <option value="选择排序">选择排序</option>
+    <option value="选择排序" selected>选择排序</option>
+    <option value="冒泡排序">冒泡排序</option>
     <option value="插入排序" >插入排序</option>
     <option value="快速排序">快速排序</option>
+    <option value="归并排序">归并排序</option>
+    <option value="堆排序">堆排序</option>
 </select>
 <button id="startSortBtn" disabled>开始排序</button>
 <button id="randomBtn">生成随机数组</button>
+<div id="hint"></div>
 <div id="container">
 
 </div>
